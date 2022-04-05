@@ -4,7 +4,7 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><a href="index.html">Bald's Barber</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
+
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
@@ -26,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>A grandeza do cabeleireiro está em exaltar o que é natural em seus clientes.</h1>
+          <h1>Trasnformando carecas em sorrisos</h1>
           <h2>Buscando a sua beleza desde 2022</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Comece agora</a>
@@ -51,17 +51,21 @@
       <div class="row content">
         <div class="col-lg-6">
           <p>
-            Apaixonados pela arte de cortar o cabelo a beleza natural nossos cabeleireiros estão sempre atualizados com as tendências de moda e as novas técnicas do mercado, para garantir as melhores experiências aos nossos clientes. <p>Especializados em:<p>
+            Apaixonados pela arte de cortar o cabelo a beleza natural, nossos cabeleireiros 
+            estão sempre atualizados com as tendências de moda e as novas técnicas do mercado, 
+            garantindo sempre as melhores experiências aos nossos clientes. <p>Especializados em:<p>
           </p>
           <ul>
             <li><i class="ri-check-double-line"></i> Cabelo</li>
             <li><i class="ri-check-double-line"></i> Barba</li>
+            <li><i class="ri-check-double-line"></i> Implante Capilar</li>
           </ul>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
           <p>
             Agende seu atendimento de forma simples e intuitiva, com apenas alguns cliques.
-            Acesse seu histórico, lista de serviços, receba notificações com lembretes dos seus agendamentos, realize pagamentos e muitos mais.
+            Acesse seu histórico, lista de serviços, receba notificações com lembretes dos seus agendamentos,
+            realize pagamentos e muitos mais.
           </p>
           <a href="#services" class="btn-learn-more">Veja mais</a>
         </div>
@@ -75,7 +79,9 @@
 
       <div class="section-title">
         <h2>Serviços</h2>
-        <p>Muito além de barba, cabelo e bigode, a Bald's Barber supera as expectativas no que se refere aos serviços de cuidado com a aparência masculina e lazer, mesclando tradição e contemporaneidade resultando em um ambiente diferenciado e exclusivo.</p>
+        <p>Muito além de barba, cabelo e bigode, a Bald's Barber supera as expectativas no que se refere aos serviços
+          de cuidado com a aparência masculina e lazer, mesclando tradição e contemporaneidade resultando em um ambiente
+           diferenciado e exclusivo.</p>
       </div>
 
       <div class="row">
@@ -98,8 +104,8 @@
         <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box">
             <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">combo</a></h4>
-            <p>corte em combo e ganhe descontos exclusivos por tempo limitado!!!</p>
+            <h4><a href="">Combo</a></h4>
+            <p>Corte em combo e ganhe descontos exclusivos por tempo limitado!!!</p>
           </div>
         </div>
         
@@ -108,6 +114,34 @@
         </div>
 
       </div>
+
+<br><br><br><br>
+<div id="fila">
+  <div class="section-headline text-center">
+    <h2>Lista de Espera</h2>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+      <table class="table text-center mt-5">
+        <thead>
+          <tr>
+            <td># Fila</td>
+            <td>Cliente</td>
+            <td>Serviço</td>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of fila; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{item.cliente}}</td>
+            <td>{{servicos[item.servico]}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
     </div>
   </section><!-- End Services Section -->
