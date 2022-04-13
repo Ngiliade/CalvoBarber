@@ -25,18 +25,25 @@ export class AppComponent {
   fila: Cliente[] = [];
   servicos: typeof Servico = Servico;
 
+
   constructor(
     public http: HttpClient,
   ) {
     this.pegarDados();
   }
 
+  ngOnDestroy() {
+
+  }
+
   ngOnInit() {
+
+
     setInterval(
       () => {
         this.pegarDados();
       }
-      , 10000
+      , 1000
     )
   }
 
